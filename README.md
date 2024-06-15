@@ -1,1 +1,83 @@
-# Enix-s_RNG
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/KNBp0LRy"), "Coastified UI")()
+repeat wait() until game:IsLoaded()
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+end)
+local Window = Library:NewWindow("Enix's RNG")
+
+local Section = Window:NewSection("AutoFarm")
+local Toggle = Section:CreateToggle("Auto [Roll]", function(Value)
+_G.Roll = Value
+while _G.Roll do
+wait(0.1)  -- Wait for 1 second before checking for enemies
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartRoll"):FireServer()
+local args = {
+    [1] = "Equip"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("RolledFromClient"):FireServer(unpack(args))
+
+end
+end)
+local Toggle = Section:CreateToggle("Auto [Dupe-Potion]", function(Value)
+_G.Dupe = Value
+while _G.Dupe do
+wait(0.1)  -- Wait for 1 second before checking for enemies
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("InventoryEvent"):FireServer("Equip", "Super Luck Potion", "Usable")
+
+end
+end)  
